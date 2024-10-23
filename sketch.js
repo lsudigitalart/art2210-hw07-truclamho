@@ -57,7 +57,7 @@ function draw() {
 
     // displays lyrics at specific 
     for (let i = 0; i < lyrics.length; i++) {
-      if (currentTime >= lyrics[i].time && (i === lyrics.length - 1 || currentTime < lyrics[i + 1].time)) {
+      if (currentTime >= lyrics[i].time) {
         currentLyric = lyrics[i].text;
       }
     }
